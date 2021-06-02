@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Grupo EPM Electrificadora de Santander</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link href="https://allfont.es/allfont.css?fonts=aleo-light" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="Database/datatables.css">
+    <style type="text/css">
+      @font-face {
+        font-family: "playlist-script";
+        src: url("playlist-script.otf");
+      }
+      @font-face {
+        font-family: "Aleo-light";
+        src: url("aleo-light_[allfont.es].ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <section name="navegation-bar">
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0 shake-slow" href="#">
+            <img
+              src="img/Essa.png"
+              height="45"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Remedy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <!-- Notifications -->
+           <!-- Icon --> 
+          <a class="text-reset me-3 shake-horizontal" data-mdb-toggle="modal" data-mdb-target="#exampleModal" href="#">
+            <i class="far fa-newspaper"></i>
+          </a> 
+          <a
+            class="text-reset me-3 dropdown-toggle hidden-arrow shake-horizontal"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+
+          <!-- Avatar -->
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+              class="rounded-circle"
+              height="25"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+      <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-mdb-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+    </nav>
+    <!-- Navbar -->
+    </section>
+
+    <div class="container-fluid" style="margin-top: 100px;">
+    <!--Aqui Adiciono una tabla-->
+    <div class="row w-100">
+        <div class="col-md-5 d-flex justify-content-md-end justify-content-center col-sm-12">
+            <img src="img/app.png" class="img-fluid" alt="Welcome" style="width: 25vh;" />
+        </div>
+        <div class="col-md-7 d-block d-sm-inline-block col-sm-12 align-items-center justify-content-sm-center row">
+            <div class="col-12 d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                <h3 style="font-family: Aleo-light;">Interfaz Auxiliar Remedy</h3>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-md-start justify-content-sm-center justify-content-xs-center justify-content-center">Creado por: &nbsp;<span class="badge badge-success">Edgar Andrés Montenegro Martínez</span></div>
+            <div class="mt-2 col-sm-12 d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                <p style="font-family: playlist-script; font-size: 22px;">Bienvenido</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid">
+        <div class="mt-5">
+          <table class="table" id="table_id">
+            <thead>
+              <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Serial</th>
+                <th scope="col">Encargado</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">Creado:</th>
+                <th scope="col">Finalizo</th>
+                <th scope="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><i class="fas fa-thumbs-up fa-2x text-success"></i><span class="text-success"> Solucionado</span></th>
+                <td>000001</td>
+                <td><strong>Sergio Baron</strong></td>
+                <td>Alta</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-thumbs-up fa-2x text-success"></i><span class="text-success"> Solucionado</span></th>
+                <td>000002</td>
+                <td><strong>Nancy Camacho</strong></td>
+                <td>Media</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-thumbs-up fa-2x text-success"></i><span class="text-success"> Solucionado</span></th>
+                <td>000003</td>
+                <td><strong>Nelson Mandela</strong></td>
+                <td>Baja</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-stopwatch fa-2x text-warning"></i><span class="text-warning"> Proximo a caducar</span></th>
+                <td>000004</td>
+                <td><strong>Edgar Montenegro</strong></td>
+                <td>Baja</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-exclamation-triangle fa-2x text-danger"></i><span class="text-danger"> Caduco</span></th>
+                <td>000005</td>
+                <td><strong>Edgar Montenegro</strong></td>
+                <td>Baja</td>
+                <td>2020/05/20 9:20:22</td>
+                <td><code>CADUCO</code></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="far fa-surprise fa-2x"></i><span> Sin auxiliar</span></th>
+                <td>000006</td>
+                <td><strong>No registra</strong></td>
+                <td>Baja</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-pause-circle fa-2x text-primary"></i><span class="text-primary"> En espera</span></th>
+                <td>000007</td>
+                <td><strong>Alberto Baez</strong></td>
+                <td>Alta</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/06/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-exclamation-triangle fa-2x text-danger"></i><span class="text-danger"> Caduco</span></th>
+                <td>000006</td>
+                <td><strong>Edgar Montenegro</strong></td>
+                <td>Baja</td>
+                <td>2020/05/20 9:20:22</td>
+                <td><code>CADUCO</code></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-pause-circle fa-2x text-primary"></i><span class="text-primary"> En espera</span></th>
+                <td>000008</td>
+                <td><strong>Sergio Baron</strong></td>
+                <td>Media</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-pause-circle fa-2x text-primary"></i><span class="text-primary"> En espera</span></th>
+                <td>000008</td>
+                <td><strong>Sergio Baron</strong></td>
+                <td>Media</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <tr>
+                <th scope="row"><i class="fas fa-pause-circle fa-2x text-primary"></i><span class="text-primary"> En espera</span></th>
+                <td>000008</td>
+                <td><strong>Sergio Baron</strong></td>
+                <td>Media</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>2020/05/20 9:20:22</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="Database/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="Database/datatables.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#table_id').dataTable();
+        } );
+      </script>
+  </body>
+</html>
+ 
